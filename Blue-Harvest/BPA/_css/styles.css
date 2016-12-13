@@ -29,22 +29,91 @@ Color Palette:
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background: #998D6D;/*(quinn)*/
 }
-
+main {
+  height: 2133px;/*puts the footer at the bottum of each page equally. not somthing we want to keep just helps with syling visually. (quinn)*/
+}
+main .container {
+  height: 2133px/*puts the footer at the bottum of each page equally. not somthing we want to keep just helps with syling visually. (quinn)*/
+}
 h1{
   font-family: 'Special Elite', cursive;
+  margin: 15px 20px 10px; /*(quinn)*/
+}
+p, h2, h3, h4, h5, h6, span {
+  margin: 20px;
+}
+main img, .container {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
 }
 .container{
   max-width: 1140px;
+ }
+header .container {/*(quinn)*/
+    z-index: 1;
+    ;
 }
 .fluid{
   max-width: 100%;
 }
+.ten h1 {
+  margin-left: -22px;
+}
+.box { /*(quinn)*/
+  height: 515.5px;
+  border: 2px solid rgba(0,0,0,1);
+  margin: 10px;
+}
+.box:first-child { /*(quinn)*/
+  margin-left: 13.5px;
+}
+.box h2, .six p { /*(quinn)*/
+  text-align: center;
+}
+.box h2 { /*(quinn)*/
+  border: 2px solid rgba(0,0,0,1);
+  margin: 7px 28px 10px;
+  padding: 0px 0px 3px;
+}
+.box h2 a { /*(quinn)*/
+  color: ; /*add text color(quinn)*/
+}
+.box h2 a:hover { /*(quinn)*/
+  color: ; /*add text color(quinn)*/
+}
+.box p {
+  height: 48px;
+}
+.box img { /*(quinn)*/
+  margin: 12px 22px;
+}
+.line {
+  border-bottom: 2px solid rgba(0,0,0,1);
+  margin:  0px 0px 6px;
+}
+form  {
+  border: 2px solid rgba(0,0,0,1);
+  width: 45%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input, form textarea, form span {
+  margin: 10px;
+}
+/*form input, form textarea {
+  font-size: 2em;
+}
+form span {
+  font-size: 1.5em;
+}*/
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 100%;
-    padding: 0; }
+    padding: 0; 
+  }
 }
 .header{
 background: #fff;
@@ -155,7 +224,9 @@ color: #fff;
 #categories h3{
   text-align: center;
 }
-
+.border {
+  border: 1px solid red;
+}
 /*========================
 5. Fonts
 =========================*/
@@ -166,17 +237,28 @@ color: #fff;
 
 /*mobile styles*/
 
-@media only screen and (max-width:480px) {
-
+@media only screen and (max-width: 399px) {/*399px fixes padding issue(quinn)*/
+  .container{
+    width: 100%;
+    padding: 0; 
+  }
+}
+@media only screen and (max-width: 549px) {/*fix to margin issue on text(quinn)*/
+  h1,h2,h3,h4,h5,h6,p {
+    margin: 10px;
+  }
+}
 
 
 
 
 @media only screen and (min-width: 481px) and (max-width: 861px) {
 
-
+}
 
 
 /*tablet styles*/
 
 @media only screen and (min-width:861px) {
+
+}
